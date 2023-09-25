@@ -18,4 +18,9 @@ public class HomeController {
     public String getHomeWithDate(){
         return "Welcome to DevOps Jenkins Assignment" +new Date();
     }
+
+    @GetMapping(value = "/welcome")
+    public String getWelcome(){
+        return "Welcome Page to DevOps Jenkins Assignment"
+    }
 }
